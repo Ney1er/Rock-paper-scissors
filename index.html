@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <link href="font/PressStart2P-Regular.ttf" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +16,53 @@
         <h2>First to 5 points win!</h2>
     </header>
     <main>
-        <div class="player">
-            <!--Player icon-->
-            <h2>Player</h2>
-            <!--Rock paper scissor choice icon-->
+        <div class="battle">
+            <div class="player">
+                <div class="profile">
+                    <img src="Images/player-icon.png" class="profile-icon">
+                    <h2>Player</h2>
+                </div>
+                <!--Rock paper scissor choice icon-->
+            </div>
+            <div class="result">
+                <div class="stats-1">
+                    <div class="stat" id="win">
+                        <span>0</span>
+                        <p>Wins</p>
+                    </div>
+                    <div class="stat" id="lose">
+                        <span>0</span>
+                        <p>Loses</p>
+                    </div>
+                </div>
+                <div class="stats-2">
+                    <div class="stat" id="draw">
+                        <span>0</span>
+                        <p>Draws</p>
+                    </div>
+                    <div class="stat" id="rounds">
+                        <span>0</span>
+                        <p>Rounds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="computer">
+                <div class="profile">
+                    <img src="Images/computer-icon.png" class="profile-icon">
+                    <h2>Computer</h2>
+                </div>
+                <!--Rock paper scissor choice icon-->
+            </div>
         </div>
-        <div class="result">
+        <div class="moveset">
+            <h2>Choose your move</h2>
+            <div class="moves">
+                <img src="Images/rock.png">
+                <img src="Images/paper.png">
+                <img src="Images/scissors.png">
+            </div>
         </div>
-        <div class="computer">
-            <!--Computer icon-->
-            <h2>Computer</h2>
-            <!--Rock paper scissor choice icon-->
-        </div>
+
     </main>
 
     <script src="script.js"></script>
